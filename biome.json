@@ -26,28 +26,13 @@
         "useAltText": "error"
       },
       "style": {
-        "all": false
+        "recommended": true
       },
       "nursery": {
         "recommended": true,
-        "useSortedClasses": "off",
+        "useSortedClasses": "warn",
         "noProcessEnv": "warn"
       }
     }
-  },
-  "overrides": [
-    {
-      "include": ["*.astro"],
-      "linter": {
-        "rules": {
-          "style": { "useConst": "off", "useImportType": "off" },
-          "correctness": {
-            "noUnusedImports": "off",
-            "noUnusedVariables": "off"
-          }
-        }
-      }
-    },
-    { "include": ["*.astro"] }
-  ]
+  }
 }
