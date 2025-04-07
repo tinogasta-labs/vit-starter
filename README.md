@@ -1,62 +1,57 @@
-# React + TypeScript + Vite
+# ⚡ Vit Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+A lightweight starter template for modern web apps using **Vite**, **React**,
+**TypeScript**, and **Bun**.
 
-Currently, two official plugins are available:
+Start building fast, scalable, and type-safe applications with a clean and
+minimal setup.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the
-configuration to enable type-aware lint rules:
+- ⚡ Vite for fast development and build
+- ⚛️ React with modern hooks and functional components
+- 🧠 TypeScript for static typing
+- 🎯 Biome for fast linting and formatting
+- 🪝 Lefthook for managing Git hooks
+- 🌙 Dark mode-ready styles
+- 🐇 Powered by [Bun](https://bun.sh) — ultra-fast dev experience
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 Getting Started
+
+### Clone & Install
+
+```bash
+git clone https://github.com/your-username/vit-starter.git
+cd vit-starter
+bun install
 ```
 
-You can also install
-[eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x)
-and
-[eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom)
-for React-specific lint rules:
+### Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+bun run dev       # Start development server
+bun run build     # Build for production
+bun run preview   # Preview production build
+bun run format    # Format code with Biome
+bun run lint      # Lint code with Biome
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Project Structure
+
+```
+vit-starter/
+├─ public/              # Static assets
+├─ src/
+│  ├─ components/       # Reusable UI components
+│  ├─ routes/           # App routes or views
+│  ├─ styles/           # Global styles
+│  ├─ App.tsx           # Root component
+│  └─ main.tsx          # Entry point
+├─ index.html           # App HTML template
+├─ bun.lockb            # Bun lockfile
+└─ biome.json           # Biome configuration
 ```
