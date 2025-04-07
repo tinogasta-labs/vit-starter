@@ -30,7 +30,7 @@
       },
       "nursery": {
         "recommended": true,
-        "useSortedClasses": "warn",
+        "useSortedClasses": "off",
         "noProcessEnv": "warn"
       }
     }
