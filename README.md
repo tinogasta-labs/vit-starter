@@ -49,9 +49,14 @@ vit-starter/
 │  ├─ components/       # Reusable UI components
 │  ├─ routes/           # App routes or views
 │  ├─ styles/           # Global styles
-│  ├─ App.tsx           # Root component
+│  ├─ types/            # Shared types
+│  ├─ root.tsx          # Root component
 │  └─ main.tsx          # Entry point
 ├─ index.html           # App HTML template
-├─ bun.lockb            # Bun lockfile
-└─ biome.json           # Biome configuration
+├─ vite.config.ts       # Vite configuration
+├─ .prettierrc.yml      # Prettier config
+├─ lefthook.yml         # Lefthook config
+├─ biome.json           # Biome config
+├─ bun.lock             # Bun lockfile
+└─ tsconfig.json        # TypeScript config
 ```
