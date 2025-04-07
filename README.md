@@ -25,8 +25,8 @@ minimal setup.
 ### Clone & Install
 
 ```bash
-git clone https://github.com/your-username/vit-starter.git
-cd vit-starter
+git clone https://github.com/tinogasta-labs/vit-starter.git myapp
+cd myapp
 bun install
 ```
 
