@@ -15,6 +15,13 @@
       href="/fonts/mona-sans-variable.woff2"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      as="image"
+      type="image/svg+xml"
+      href="/images/sprite.svg"
+      crossorigin="anonymous"
+    />
 
     <!-- OG Meta Tags -->
     <meta property="og:url" content="https://vit-starter.netlify.app/" />
@@ -44,7 +51,13 @@
     <meta name="twitter:image" content="/images/og-image.png" />
   </head>
   <body>
-    <img src="/images/sprite.svg" alt="" hidden fetchpriority="high" />
+    <img
+      src="/images/sprite.svg"
+      alt=""
+      hidden
+      fetchpriority="high"
+      crossorigin="anonymous"
+    />
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
