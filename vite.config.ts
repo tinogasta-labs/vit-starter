@@ -18,6 +18,31 @@ export default defineConfig({
     minify: 'esbuild',
     sourcemap: false,
     target: 'esnext',
+    rollupOptions: {
+      output: {
+        manualChunks: id => {
+          if (id.includes('react-router')) {
+            return 'vendor-rr'
+          }
+          if (id.includes('react') && !id.includes('react-dom')) {
+            return 'vendor-r'
+          }
+          if (id.includes('raect-dom')) {
+            return 'vendor-rd'
+          }
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
+          return null
+        },
+      },
+    },
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router'],
+  },
+  esbuild: {
+    treeShaking: true,
   },
   plugins: [tailwindcss(), react(), minify(), compression()],
 })
