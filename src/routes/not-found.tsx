@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { Icon } from '~/components/ui/icon'
+import { IconArrow } from '~/components/icon/arrow'
 
 export default function NotFoundRoute() {
   return (
@@ -9,7 +9,7 @@ export default function NotFoundRoute() {
         Sorry, we have no content for this page yet.
       </p>
       <Link to="/" className="mt-6 inline-flex items-center gap-2">
-        <Icon name="arrow-right" className="rotate-180" />
+        <IconArrow displayDirection="left" />
         Back to home
       </Link>
     </section>

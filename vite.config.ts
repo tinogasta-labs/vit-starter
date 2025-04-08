@@ -2,7 +2,6 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import compression from 'vite-plugin-compression'
-import { iconsSpritesheet } from 'vite-plugin-icons-spritesheet'
 import { ViteMinifyPlugin as minify } from 'vite-plugin-minify'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
@@ -40,26 +39,5 @@ export default defineConfig({
       },
     },
   },
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router'],
-  },
-  esbuild: {
-    treeShaking: true,
-  },
-  plugins: [
-    tsconfigPaths(),
-    tailwindcss(),
-    react(),
-    iconsSpritesheet({
-      withTypes: true,
-      inputDir: './resources/icons',
-      outputDir: './public/images',
-      typesOutputFile: './src/components/ui/icons/types.ts',
-      fileName: 'sprite.svg',
-      formatter: 'prettier',
-      iconNameTransformer: name => name.toLocaleLowerCase(),
-    }),
-    minify(),
-    compression(),
-  ],
+  plugins: [tsconfigPaths(), tailwindcss(), react(), minify(), compression()],
 })

@@ -1,4 +1,4 @@
-import { Icon } from '~/components/ui/icon'
+import { IconArrow } from '~/components/icon/arrow'
 
 export default function HomeRoute() {
   return (
@@ -18,7 +18,7 @@ export default function HomeRoute() {
           className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md bg-neutral-950 px-6 text-sm font-medium text-neutral-50"
         >
           Get Started
-          <Icon name="arrow-right" />
+          <IconArrow displayDirection="right" />
         </a>
       </div>
     </section>
