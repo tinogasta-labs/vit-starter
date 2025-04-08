@@ -27,7 +27,7 @@ export default defineConfig({
           if (id.includes('react') && !id.includes('react-dom')) {
             return 'vendor-r'
           }
-          if (id.includes('raect-dom')) {
+          if (id.includes('react-dom')) {
             return 'vendor-rd'
           }
           if (id.includes('node_modules')) {
