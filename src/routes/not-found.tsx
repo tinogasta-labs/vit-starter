@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import { Icon } from '~/components/ui/icon'
 
 export default function NotFoundRoute() {
   return (
@@ -7,7 +8,8 @@ export default function NotFoundRoute() {
       <p className="mt-2 text-neutral-600">
         Sorry, we have no content for this page yet.
       </p>
-      <Link to="/" className="mt-6 underline">
+      <Link to="/" className="mt-6 inline-flex items-center gap-2">
+        <Icon name="arrow-right" className="rotate-180" />
         Back to home
       </Link>
     </section>

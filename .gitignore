@@ -23,3 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated files
+/src/components/ui/icons
+/public/images/sprite.svg

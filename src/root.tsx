@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router'
-import HomeRoute from './routes/home'
+import HomeRoute from '~/routes/home'
 
 const NotFoundRoute = lazy(() => import('./routes/not-found.tsx'))
 

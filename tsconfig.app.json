@@ -20,7 +20,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/icon-name": [
+        "./src/components/ui/icons/types.ts",
+        "./src/types/icon-name.d.ts"
+      ]
+    }
   },
   "include": ["src"]
 }

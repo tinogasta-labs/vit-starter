@@ -1,3 +1,5 @@
+import { Icon } from '~/components/ui/icon'
+
 export default function HomeRoute() {
   return (
     <section className="mx-auto flex max-w-3xl flex-1 flex-col items-center py-40">
@@ -13,9 +15,10 @@ export default function HomeRoute() {
       <div className="mt-8">
         <a
           href="https://github.com/tinogasta-labs/vit-starter"
-          className="inline-flex h-12 cursor-pointer items-center rounded-md bg-neutral-950 px-6 text-sm font-medium text-neutral-50"
+          className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md bg-neutral-950 px-6 text-sm font-medium text-neutral-50"
         >
           Get Started
+          <Icon name="arrow-right" />
         </a>
       </div>
     </section>
