@@ -3,6 +3,7 @@ import type { SiteConfig } from '~/types'
 export function getSeo({
   title,
   description,
+  author,
   keywords,
   site,
   ogImage,
@@ -25,8 +26,13 @@ export function getSeo({
     { type: 'meta', props: { property: 'og:type', content: 'website' } },
     {
       type: 'meta',
+      props: { property: 'og:site_name', content: title },
+    },
+    {
+      type: 'meta',
       props: { property: 'og:url', content: site },
     },
+
     {
       type: 'meta',
       props: { name: 'twitter:card', content: 'summary_large_image' },
@@ -34,12 +40,13 @@ export function getSeo({
     { type: 'meta', props: { name: 'twitter:title', content: title } },
     {
       type: 'meta',
-      props: { name: 'twitter:description', content: description },
+      props: { name: 'twitter:site', content: site },
     },
     {
       type: 'meta',
-      props: { name: 'twitter:image', content: ogImage },
+      props: { name: 'twitter:author', content: author },
     },
+
     { type: 'meta', props: { name: 'canonical', content: site } },
   ]
 }
