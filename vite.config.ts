@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import preact from "@preact/preset-vite";
-import tailwindcss from "@tailwindcss/vite";
-import tsconfigpaths from "vite-tsconfig-paths";
+import { defineConfig } from 'vite'
+import preact from '@preact/preset-vite'
+import tailwindcss from '@tailwindcss/vite'
+import tsconfigpaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,13 +9,13 @@ export default defineConfig({
     preact({
       prerender: {
         enabled: true,
-        renderTarget: "#app",
-        additionalPrerenderRoutes: ["/404"],
+        renderTarget: '#app',
+        additionalPrerenderRoutes: ['/404'],
         previewMiddlewareEnabled: true,
-        previewMiddlewareFallback: "/404",
+        previewMiddlewareFallback: '/404',
       },
     }),
     tailwindcss(),
     tsconfigpaths(),
   ],
-});
+})

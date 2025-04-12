@@ -1,8 +1,8 @@
-import { LocationProvider, hydrate, prerender as ssr } from "preact-iso";
+import { LocationProvider, hydrate, prerender as ssr } from 'preact-iso'
 
-import "~/styles/global.css";
-import DefaultRouter from "~/router";
-import Header from "~/components/layout/header";
+import '~/styles/global.css'
+import DefaultRouter from '~/router'
+import Header from '~/components/layout/header'
 
 export function App() {
   return (
@@ -12,13 +12,13 @@ export function App() {
         <DefaultRouter />
       </main>
     </LocationProvider>
-  );
+  )
 }
 
-if (typeof window !== "undefined") {
-  hydrate(<App />, document.getElementById("app"));
+if (typeof window !== 'undefined') {
+  hydrate(<App />, document.getElementById('app'))
 }
 
 export async function prerender(data: any) {
-  return await ssr(<App {...data} />);
+  return await ssr(<App {...data} />)
 }
