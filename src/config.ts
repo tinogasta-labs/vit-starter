@@ -6,5 +6,5 @@ export const config = {
   description:
     'Kickstart modern web apps with a fast, scalable, and type-safe development setup.',
   keywords: 'vite,typescript,preact,tailwindcss',
-  ogImage: '/og.png',
+  ogImage: '/images/og.jpg',
 } satisfies SiteConfig
