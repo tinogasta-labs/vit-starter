@@ -9,7 +9,7 @@ export default function Header() {
   }
 
   return (
-    <header className="mx-auto max-w-7xl px-6 py-4">
+    <header className="mx-auto w-full max-w-7xl px-6 py-4">
       <nav className="flex items-center justify-end gap-4">
         <a href="/" className={getClasses('/')}>
           Home
