@@ -5,7 +5,7 @@ export default function HomeRoute() {
     <div className="mx-auto max-w-7xl px-6">
       <section className="mx-auto flex max-w-3xl flex-1 flex-col items-center py-40">
         <span className="text-indigo-700">Vit Starter</span>
-        <h1 className="text-center text-3xl leading-tight text-neutral-800 sm:text-5xl sm:leading-snug">
+        <h1 className="text-center text-3xl leading-tight font-medium text-neutral-800 sm:text-5xl sm:leading-snug">
           Starting Point for Scalable <br className="hidden md:block" />
           Web Projects
         </h1>
