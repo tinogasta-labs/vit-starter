@@ -1,8 +1,8 @@
 import { LocationProvider, hydrate, prerender as ssr } from "preact-iso";
 
-import { Header } from "./components/Header.jsx";
-import "./style.css";
-import DefaultRouter from "./router.js";
+import "~/styles/global.css";
+import DefaultRouter from "~/router";
+import Header from "~/components/layout/header";
 
 export function App() {
   return (

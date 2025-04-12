@@ -1,6 +1,6 @@
 import { Route, Router } from "preact-iso";
-import HomeRoute from "./routes/home";
-import NotFoundRoute from "./routes/_404";
+import HomeRoute from "~/routes/home";
+import NotFoundRoute from "~/routes/_404";
 
 export default function DefaultRouter() {
   return (
