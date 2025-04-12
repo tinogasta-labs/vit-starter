@@ -1,0 +1,38 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": { "ignoreUnknown": false, "ignore": ["tsconfig.*"] },
+  "formatter": {
+    "enabled": false
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "recommended": true,
+        "noConsole": "warn"
+      },
+      "correctness": {
+        "recommended": true,
+        "noUnusedVariables": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedLabels": "error"
+      },
+      "a11y": {
+        "recommended": true,
+        "noBlankTarget": "error",
+        "useAltText": "error"
+      },
+      "style": {
+        "recommended": true
+      },
+      "nursery": {
+        "recommended": true,
+        "useSortedClasses": "off",
+        "noProcessEnv": "warn"
+      }
+    }
+  }
+}
